@@ -1,0 +1,13 @@
+httpbin "httpbin.org":
+    @type = "REST"
+    @owner = "josh"
+    @email = "joshuacarpeggiani@gmail.com"
+    @version = "1.0"
+    @host = "httpbin.org"
+    @url = 	 "httpbin.org"
+    @description =:
+        | API Management facade for a very handy and free online HTTP tool.
+
+    /anything:
+        GET:
+            | Returns request data, including method used.

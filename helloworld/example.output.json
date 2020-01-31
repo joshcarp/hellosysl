@@ -1,0 +1,911 @@
+{
+ "apps": {
+  "httpbin": {
+   "name": {
+    "part": [
+     "httpbin"
+    ]
+   },
+   "longName": "httpbin.org",
+   "attrs": {
+    "description": {
+     "s": "API Management facade for a very handy and free online HTTP tool."
+    },
+    "host": {
+     "s": "httpbin.org"
+    },
+    "version": {
+     "s": "1.0"
+    }
+   },
+   "endpoints": {
+    "DELETE /delete": {
+     "name": "DELETE /delete",
+     "docstring": "Returns DELETE data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "DELETE",
+      "path": "/delete"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 94,
+       "col": 8
+      },
+      "end": {
+       "line": 97,
+       "col": 4
+      }
+     }
+    },
+    "GET /anything": {
+     "name": "GET /anything",
+     "docstring": "Returns request data, including method used.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/anything"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 14,
+       "col": 8
+      },
+      "end": {
+       "line": 17,
+       "col": 4
+      }
+     }
+    },
+    "GET /base64/{value}": {
+     "name": "GET /base64/{value}",
+     "docstring": "Decodes base64url-encoded string.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/base64/{value}",
+      "urlParam": [
+       {
+        "name": "value",
+        "type": {
+         "primitive": "STRING",
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 17,
+           "col": 12
+          },
+          "end": {
+           "line": 17,
+           "col": 26
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 18,
+       "col": 8
+      },
+      "end": {
+       "line": 21,
+       "col": 4
+      }
+     }
+    },
+    "GET /brotli": {
+     "name": "GET /brotli",
+     "docstring": "Returns brotli-encoded data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/brotli"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 22,
+       "col": 8
+      },
+      "end": {
+       "line": 25,
+       "col": 4
+      }
+     }
+    },
+    "GET /bytes/{number}": {
+     "name": "GET /bytes/{number}",
+     "docstring": "Generates n random bytes of binary data",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/bytes/{number}",
+      "urlParam": [
+       {
+        "name": "number",
+        "type": {
+         "primitive": "STRING",
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 25,
+           "col": 11
+          },
+          "end": {
+           "line": 25,
+           "col": 26
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 26,
+       "col": 8
+      },
+      "end": {
+       "line": 29,
+       "col": 4
+      }
+     }
+    },
+    "GET /cache/{maxAge}": {
+     "name": "GET /cache/{maxAge}",
+     "docstring": "Sets a Cache-Control header for n seconds.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/cache/{maxAge}",
+      "urlParam": [
+       {
+        "name": "maxAge",
+        "type": {
+         "typeRef": {
+          "context": {
+           "appname": {
+            "part": [
+             "httpbin"
+            ]
+           }
+          },
+          "ref": {
+           "path": [
+            "_param_maxAge"
+           ]
+          }
+         },
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 29,
+           "col": 11
+          },
+          "end": {
+           "line": 29,
+           "col": 33
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 30,
+       "col": 8
+      },
+      "end": {
+       "line": 33,
+       "col": 4
+      }
+     }
+    },
+    "GET /cml": {
+     "name": "GET /cml",
+     "docstring": "Returns some XML.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/cml"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 34,
+       "col": 8
+      },
+      "end": {
+       "line": 37,
+       "col": 4
+      }
+     }
+    },
+    "GET /deflate": {
+     "name": "GET /deflate",
+     "docstring": "Returns deflate-encoded data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/deflate"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 38,
+       "col": 8
+      },
+      "end": {
+       "line": 41,
+       "col": 4
+      }
+     }
+    },
+    "GET /delay/{seconds}": {
+     "name": "GET /delay/{seconds}",
+     "docstring": "Delays responding for n–10 seconds.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/delay/{seconds}",
+      "urlParam": [
+       {
+        "name": "seconds",
+        "type": {
+         "typeRef": {
+          "context": {
+           "appname": {
+            "part": [
+             "httpbin"
+            ]
+           }
+          },
+          "ref": {
+           "path": [
+            "_param_seconds"
+           ]
+          }
+         },
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 41,
+           "col": 11
+          },
+          "end": {
+           "line": 41,
+           "col": 35
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 42,
+       "col": 8
+      },
+      "end": {
+       "line": 45,
+       "col": 4
+      }
+     }
+    },
+    "GET /get": {
+     "name": "GET /get",
+     "docstring": "Returns GET data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/get"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 46,
+       "col": 8
+      },
+      "end": {
+       "line": 49,
+       "col": 4
+      }
+     }
+    },
+    "GET /gzip": {
+     "name": "GET /gzip",
+     "docstring": "Returns gzip-encoded data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/gzip"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 50,
+       "col": 8
+      },
+      "end": {
+       "line": 53,
+       "col": 4
+      }
+     }
+    },
+    "GET /headers": {
+     "name": "GET /headers",
+     "docstring": "Returns headers dictionary.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/headers"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 54,
+       "col": 8
+      },
+      "end": {
+       "line": 57,
+       "col": 4
+      }
+     }
+    },
+    "GET /ip": {
+     "name": "GET /ip",
+     "docstring": "Returns origin IP.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/ip"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 58,
+       "col": 8
+      },
+      "end": {
+       "line": 61,
+       "col": 4
+      }
+     }
+    },
+    "GET /redirect-to": {
+     "name": "GET /redirect-to",
+     "docstring": "302 redirects to a URL provided in query",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/redirect-to",
+      "queryParam": [
+       {
+        "name": "url",
+        "type": {
+         "primitive": "STRING",
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 62,
+           "col": 13
+          },
+          "end": {
+           "line": 62,
+           "col": 17
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 62,
+       "col": 8
+      },
+      "end": {
+       "line": 65,
+       "col": 4
+      }
+     }
+    },
+    "GET /response-headers": {
+     "name": "GET /response-headers",
+     "docstring": "Returns key-value query parameters as response headers.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/response-headers"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 66,
+       "col": 8
+      },
+      "end": {
+       "line": 69,
+       "col": 4
+      }
+     }
+    },
+    "GET /status/{code}": {
+     "name": "GET /status/{code}",
+     "docstring": "Returns provided HTTP Status code.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/status/{code}",
+      "urlParam": [
+       {
+        "name": "code",
+        "type": {
+         "typeRef": {
+          "context": {
+           "appname": {
+            "part": [
+             "httpbin"
+            ]
+           }
+          },
+          "ref": {
+           "path": [
+            "_param_code"
+           ]
+          }
+         },
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 69,
+           "col": 12
+          },
+          "end": {
+           "line": 69,
+           "col": 30
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 70,
+       "col": 8
+      },
+      "end": {
+       "line": 73,
+       "col": 4
+      }
+     }
+    },
+    "GET /stream/{number}": {
+     "name": "GET /stream/{number}",
+     "docstring": "Streams min(number, 100) lines.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/stream/{number}",
+      "urlParam": [
+       {
+        "name": "number",
+        "type": {
+         "primitive": "FLOAT",
+         "sourceContext": {
+          "file": "output.sysl",
+          "start": {
+           "line": 73,
+           "col": 12
+          },
+          "end": {
+           "line": 73,
+           "col": 26
+          }
+         }
+        }
+       }
+      ]
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 74,
+       "col": 8
+      },
+      "end": {
+       "line": 77,
+       "col": 4
+      }
+     }
+    },
+    "GET /user-agent": {
+     "name": "GET /user-agent",
+     "docstring": "Returns user agent string.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/user-agent"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 78,
+       "col": 8
+      },
+      "end": {
+       "line": 81,
+       "col": 4
+      }
+     }
+    },
+    "GET /uuid": {
+     "name": "GET /uuid",
+     "docstring": "Returns UUID4.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "GET",
+      "path": "/uuid"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 82,
+       "col": 8
+      },
+      "end": {
+       "line": 85,
+       "col": 4
+      }
+     }
+    },
+    "PATCH /patch": {
+     "name": "PATCH /patch",
+     "docstring": "Returns PATCH data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "PATCH",
+      "path": "/patch"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 98,
+       "col": 8
+      },
+      "end": {
+       "line": 104,
+       "col": 4
+      }
+     }
+    },
+    "POST /post": {
+     "name": "POST /post",
+     "docstring": "Returns POST data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "POST",
+      "path": "/post"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 90,
+       "col": 8
+      },
+      "end": {
+       "line": 93,
+       "col": 4
+      }
+     }
+    },
+    "PUT /put": {
+     "name": "PUT /put",
+     "docstring": "Returns PUT data.",
+     "attrs": {
+      "patterns": {
+       "a": {
+        "elt": [
+         {
+          "s": "rest"
+         }
+        ]
+       }
+      }
+     },
+     "restParams": {
+      "method": "PUT",
+      "path": "/put"
+     },
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 86,
+       "col": 8
+      },
+      "end": {
+       "line": 89,
+       "col": 4
+      }
+     }
+    }
+   },
+   "types": {
+    "_param_code": {
+     "primitive": "STRING",
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 110,
+       "col": 4
+      },
+      "end": {
+       "line": 112
+      }
+     }
+    },
+    "_param_maxAge": {
+     "primitive": "STRING",
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 107,
+       "col": 4
+      },
+      "end": {
+       "line": 110,
+       "col": 4
+      }
+     }
+    },
+    "_param_seconds": {
+     "primitive": "STRING",
+     "sourceContext": {
+      "file": "output.sysl",
+      "start": {
+       "line": 104,
+       "col": 4
+      },
+      "end": {
+       "line": 107,
+       "col": 4
+      }
+     }
+    }
+   },
+   "sourceContext": {
+    "file": "output.sysl",
+    "start": {
+     "line": 7,
+     "col": 1
+    },
+    "end": {
+     "line": 7,
+     "col": 8
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+    "host": "httpbin.org",
+    "swagger": "2.0",
+    "info": {
+      "description": "API Management facade for a very handy and free online HTTP tool.",
+      "title": "httpbin.org",
+      "version": "1.0"
+    },
+    "paths": {
+        "/anything": {
+            "get": {
+                "consumes": [
+            "application/json"
+          ],
+          "description": "Returns request data, including method used.",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {},
+          "summary": "Returns request data, including method used."
+        }
+      }
+    }
+  }
