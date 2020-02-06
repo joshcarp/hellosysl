@@ -1,4 +1,4 @@
-httpbin "httpbin.org"[~REST]:
+httpbin "httpbjbjkin.org"[~REST]:
     @type = "REST"
     @owner = "josh"
     @email = "joshuacarpeggiani@gmail.com"
