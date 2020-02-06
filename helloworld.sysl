@@ -1,7 +1,6 @@
 import helloworld/output
 
-Greeter:
-    @type = "GRPC"
+Greeter[~GRPC]:
     @deploy.prod.url = "localhost:50051"
     @proto = "./helloworld/helloworld/helloworld.proto"
     @owner = "josh"
